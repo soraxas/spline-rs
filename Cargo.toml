@@ -1,0 +1,14 @@
+[package]
+authors = ["Tin Lai"]
+edition = "2021"
+name = "spline-web"
+publish = false
+version = "0.0.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+js-sys = "*"
+wasm-bindgen = "*"
+web-sys = { version = "*", features = [ 'CanvasRenderingContext2d', 'CssStyleDeclaration', 'Document', 'Element', 'EventTarget', 'HtmlCanvasElement', 'HtmlElement', 'MouseEvent', 'Node', 'Window', ] }
